@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
+<project xmlns="http://maven.apache.org/POM/4.0.0" child.project.url.inherit.append.path="false"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
@@ -7,21 +7,21 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>parent-pom</name>
-	<url>https://github.com/36bits/${project.name}</url>
+	<url>https://github.com/36bits/${project.artifactId}</url>
 	
 	<organization>
 		<name>Pueblo</name>
 	</organization>
 
-	<scm>
-		<developerConnection>scm:git:file:///home/dev/git/${project.name}.git</developerConnection>
+	<scm child.scm.developerConnection.inherit.append.path="false">
+		<developerConnection>scm:git:file:///home/dev/git/${project.artifactId}.git/</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.test.skip>true</maven.test.skip>
-		<maven.javadoc.skip>false</maven.javadoc.skip>
+		<maven.javadoc.skip>false</maven.javadoc.skip>		
 	</properties>
 
 	<build>
