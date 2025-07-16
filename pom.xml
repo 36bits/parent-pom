@@ -2,13 +2,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>uk.co.pueblo</groupId>
+	<groupId>uk.co.pueblo.msm</groupId>
 	<artifactId>parent-pom</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>parent-pom</name>
 	<url>https://github.com/36bits/${project.artifactId}</url>
-	
+
 	<organization>
 		<name>Pueblo</name>
 	</organization>
@@ -21,7 +21,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.test.skip>true</maven.test.skip>
-		<maven.javadoc.skip>false</maven.javadoc.skip>		
+		<maven.javadoc.skip>false</maven.javadoc.skip>
 	</properties>
 
 	<build>
@@ -163,7 +163,7 @@
 					<url>file:///home/dev/maven/repository</url>
 				</repository>
 			</distributionManagement>
-		</profile>		
+		</profile>
 		<profile>
 			<id>github</id>
 			<distributionManagement>
